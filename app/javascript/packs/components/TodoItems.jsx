@@ -49,3 +49,4 @@ class TodoItems extends React.Component{
         toggleCompletedTodoItems: PropTypes.func.isRequired,
         hideCompletedTodoItems: PropTypes.bool.isRequired,
       }
+      

@@ -101,7 +101,7 @@ class TodoItem extends React.Component {
                 <td className="text-right">
                     <div className="form-check form-check-inline">
                         <input
-                            type="boolean"
+                            // type="boolean"
                             defaultChecked={this.state.complete}
                             type="checkbox"
                             onChange={this.handleChange}
@@ -129,7 +129,7 @@ class TodoItem extends React.Component {
     }
 }
 
-export default TodoItem
+export default TodoItem;
 
 TodoItem.propTypes = {
     todoItem: PropTypes.object.isRequired,

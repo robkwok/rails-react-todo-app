@@ -1,6 +1,5 @@
-import React, { StrictMode } from 'react';
-import {createRoot} from 'react-dom/client';
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import axios from 'axios';
 import TodoItems from './TodoItems';
 import TodoItem from './TodoItem';
@@ -104,18 +103,7 @@ class TodoApp extends React.Component {
   }
 }
 
-
-// const root = createRoot(document.getElementById("todo-app"));
-// root.render(
-//   <TodoApp/>,
-// );
-
-// document.addEventListener('turbolinks:load', () => {
-//   const app = document.getElementById('todo-app')
-//   app && ReactDOM.render(<TodoApp />, app)
-// })
-
 document.addEventListener('turbolinks:load', () => {
-const root = createRoot(document.getElementById("todo-app"));
-root && root.render(<TodoApp />)
+const root = ReactDOM.createRoot(document.getElementById("todo-app"));
+root.render(<TodoApp />)
   })
